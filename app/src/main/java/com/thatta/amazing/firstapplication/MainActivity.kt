@@ -15,9 +15,9 @@ class MainActivity : AppCompatActivity() {
         val btnGreeting = findViewById<Button>(R.id.btn_greeting)
 
         btnGreeting.setOnClickListener {
-            val name = tilName.text
+            val name = tilName.text.toString()
             val intent = Intent(this, HelloActivity::class.java)
-            intent.putExtra("name", name ?: "desconocido")
+            intent.putExtra("name", name)
             startActivity(intent)
         }
 
