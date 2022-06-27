@@ -15,6 +15,7 @@ class HelloActivity : AppCompatActivity() {
 
         val nameReceived = intent.getStringExtra("name")
 
-        binding.tvGreeting.text = getString(R.string.greeting, nameReceived)
+        if (nameReceived != "") binding.tvGreeting.text = getString(R.string.greeting, nameReceived)
+        else binding.tvGreeting.text = getString(R.string.greeting, "persona")
     }
 }
