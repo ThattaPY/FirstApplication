@@ -1,5 +1,6 @@
 package com.thatta.amazing.firstapplication.viewModels
 
+import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
@@ -11,5 +12,6 @@ class HelloActivityViewModel: ViewModel() {
     fun getDiceValue() {
         _diceValue.value = (1..6).random()
     }
+
 
 }

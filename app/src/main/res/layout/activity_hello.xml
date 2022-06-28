@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,14 +9,14 @@
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/tvGreeting"
+        style="@style/TextAppearance.AppCompat.Title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        style="@style/TextAppearance.AppCompat.Title"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/separator"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:text="Hola persona!"/>
+        tools:text="Hola persona!" />
 
     <View
         android:id="@+id/separator"
@@ -34,7 +35,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/dimen_middle"
         android:text="@string/btn_dice"
-        app:layout_constraintBottom_toTopOf="@id/btn_dice"
+        app:layout_constraintBottom_toTopOf="@id/tv_dice"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/separator" />
@@ -49,11 +50,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_dice"
-        app:layout_constraintVertical_bias="0.0"
         android:layout_marginTop="@dimen/dimen_middle"
         tools:text="Salió un 7 en el dado" />
-
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
