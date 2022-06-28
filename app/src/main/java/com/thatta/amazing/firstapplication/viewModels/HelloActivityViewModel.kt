@@ -12,5 +12,4 @@ class HelloActivityViewModel: ViewModel() {
         _diceValue.value = (1..6).random()
     }
 
-
 }
