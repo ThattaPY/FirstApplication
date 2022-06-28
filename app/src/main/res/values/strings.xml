@@ -3,5 +3,7 @@
     <string name="hint_question_name">Introduce tu nombre</string>
     <string name="greeting">Hola, %1$s!</string>
     <string name="button_greeting_text">saluda!</string>
+    <string name="btn_dice">Lanzar dado</string>
+    <string name="dice_value">Salió un %1$s en el dado</string>
 
 </resources>

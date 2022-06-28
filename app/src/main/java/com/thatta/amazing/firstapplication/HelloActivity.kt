@@ -17,5 +17,19 @@ class HelloActivity : AppCompatActivity() {
 
         if (nameReceived != "") binding.tvGreeting.text = getString(R.string.greeting, nameReceived)
         else binding.tvGreeting.text = getString(R.string.greeting, "persona")
+
+        binding.tvDice.text = ""
+
+
+        binding.btnDice.setOnClickListener {
+            binding.tvDice.text = getString(R.string.dice_value, getDiceValue().toString())
+        }
+
+
     }
+
+    fun getDiceValue(): Int {
+        return (1..7).random()
+    }
+
 }

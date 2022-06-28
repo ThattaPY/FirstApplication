@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="dimen_middle">16dp</dimen>
+    <dimen name="til_width">250dp</dimen>
+    <dimen name="button_width">160dp</dimen>
+    <dimen name="dimen_min">8dp</dimen>
 </resources>
