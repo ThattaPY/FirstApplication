@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+    id 'kotlin-kapt'
 }
 
 android {
@@ -47,4 +48,11 @@ dependencies {
 
     // kotlin coroutines
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.1'
+
+    // viewModel lifecycle
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.0-rc02")
+    // live data view model
+    implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.5.0-rc02")
+    // Annotation processor
+    kapt 'androidx.lifecycle:lifecycle-common-java8:2.5.0-rc02'
 }
