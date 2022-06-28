@@ -7,11 +7,10 @@ import androidx.lifecycle.ViewModel
 class HelloActivityViewModel: ViewModel() {
 
     private var _diceValue = MutableLiveData<Int>()
-
     var diceValue: LiveData<Int> = _diceValue
-
     fun getDiceValue() {
-        _diceValue.value = (1..7).random()
+        _diceValue.value = (1..6).random()
     }
+
 
 }

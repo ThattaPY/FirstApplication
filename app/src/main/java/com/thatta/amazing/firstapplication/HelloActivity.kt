@@ -33,7 +33,6 @@ class HelloActivity : AppCompatActivity() {
         binding.btnDice.setOnClickListener {
             viewModel.getDiceValue()
         }
-
     }
 
 }
